@@ -1,0 +1,44 @@
+/* Add some styling for the header, sidebar, and main content */
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  /* Remove the margin */
+  margin: 0;
+  /* Set the height to 60px */
+  height: 60px;
+  /* Add some other styling */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
+}
+
+.sidebar {
+  /* Add some styling for the sidebar */
+  position: fixed;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: #eee;
+  /* Make the font list scrollable */
+  overflow-y: scroll;
+}
+.font-item {
+  cursor: pointer;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+}
+.selected-font {
+  font-size: 48px;
+  margin: 20px 0;
+}
